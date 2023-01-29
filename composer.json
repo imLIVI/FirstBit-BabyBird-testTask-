@@ -1,0 +1,29 @@
+{
+    "name": "lipatnikova/study-project",
+    "description": "Тестовое задание",
+    "type": "project",
+    "license": "proprietary",
+    "autoload": {
+        "psr-4": {
+            "Lib\\": "lib/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Lipatnikova Viktoria",
+            "email": "lesly120898@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^8.2",
+        "ext-sqlite3": "*",
+        "symfony/console": "6.3.x-dev"
+    },
+    "scripts": {
+        "database-init": [
+            "Lib\\Commands\\DatabaseInitCommand"
+        ],
+        "dev-server": "env php -S localhost:8080 -t www www/index.php"
+    }
+}
