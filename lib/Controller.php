@@ -70,5 +70,6 @@ class Controller
     protected function sendAction(): string
     {
         // запись в базу $database->query()
+        //$database->query("INSERT INTO saveForms (ID, username, email, link) VALUES ()");
     }
 }

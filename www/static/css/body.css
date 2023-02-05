@@ -1,0 +1,5 @@
+body {
+    background: #9152f8; /* fallback for old browsers */
+    background: linear-gradient(90deg, #7579ff 0%, #b224ef 50%);
+    font-family: "Roboto", sans-serif;   
+  }
