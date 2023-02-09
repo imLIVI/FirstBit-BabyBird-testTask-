@@ -15,7 +15,10 @@ class Controller
      */
     public function process(): void
     {
-        $page = '';
+        $url = $_SERVER['REQUEST_URI'];
+        $path =  parse_url($url, PHP_URL_PATH);
+        $page = basename($path);
+        //echo $page;
 
         switch ($page) {
             case 'form':
@@ -28,7 +31,7 @@ class Controller
                 $result = $this->sendAction();
                 break;
             default:
-                header('Location: /form');
+                header('Location: /../template/form.php');
                 $result = null;
         }
 
@@ -42,10 +45,11 @@ class Controller
      *
      * todo Показ формы
      *
-     * @return string
+     * @return string|null
      */
-    protected function formAction(): string {
-
+    protected function formAction(): ?string {
+        require __DIR__ . '/../template/form.php';
+        return null;
     }
 
     /**
@@ -58,6 +62,7 @@ class Controller
     protected function listAction(): string
     {
         // селект из базы $database->query()
+        return 'list';
     }
 
     /**
@@ -70,6 +75,7 @@ class Controller
     protected function sendAction(): string
     {
         // запись в базу $database->query()
-        //$database->query("INSERT INTO saveForms (ID, username, email, link) VALUES ()");
+        return 'send';
     }
 }
+
