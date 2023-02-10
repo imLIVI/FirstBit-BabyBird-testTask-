@@ -45,7 +45,27 @@
 
 ## Результаты
 
+Главная страница приложения:
+
 ![image](https://user-images.githubusercontent.com/63547457/218164692-8a74a6ae-7b3c-43f1-bc8a-4623a1ae24fc.png)
 
+
+Если поля заполнены верно, то выводится сообщение:
+
+![image](https://user-images.githubusercontent.com/63547457/218169462-cc6b637e-e66b-49b7-b84d-382f84ac2841.png)
+
+При вводе некорректного email выводится сообщение:
+
+![image](https://user-images.githubusercontent.com/63547457/218168847-624ae0d2-3ca9-489c-8c18-2d27dd0e05e3.png)
+
+
+Список отправленных форм:
+
 ![image](https://user-images.githubusercontent.com/63547457/218164827-b5fc3bd1-c5c1-4eea-a5d1-69b690c8bdfb.png)
+
+
+Обработка POST запроса методом fetch():
+
+![image](https://user-images.githubusercontent.com/63547457/218169991-4e59c0a7-89d8-4287-96d4-555b36c98d1b.png)
+
 
