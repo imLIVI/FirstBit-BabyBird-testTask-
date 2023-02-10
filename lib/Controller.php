@@ -18,7 +18,7 @@ class Controller
         $url = $_SERVER['REQUEST_URI'];
         $path =  parse_url($url, PHP_URL_PATH);
         $page = basename($path);
-        //echo $page;
+        echo $path;
 
         switch ($page) {
             case 'form':

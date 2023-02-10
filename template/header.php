@@ -5,6 +5,7 @@
     <title>BabyBird</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="/www/static/css/style.css">
+    <script src="/www/static/js/script.js"></script>
 </head>
 
 <header>
